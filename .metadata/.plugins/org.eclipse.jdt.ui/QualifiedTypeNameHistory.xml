@@ -3,4 +3,5 @@
     <fullyQualifiedTypeName name="no.hvl.data102.Sjanger"/>
     <fullyQualifiedTypeName name="no.hvl.data102.klient.FilmarkivADT"/>
     <fullyQualifiedTypeName name="no.hvl.data102.Film"/>
+    <fullyQualifiedTypeName name="no.hvl.data102.adt.FilmarkivADT"/>
 </qualifiedTypeNameHistroy>

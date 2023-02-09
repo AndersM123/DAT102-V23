@@ -30,34 +30,9 @@ public class FilmArkiv2 implements FilmarkivADT {
 
 	@Override
 	public void leggTilFilm(Film nyFilm) {
-	    if (unikID(nyFilm.getFilmnr())) {
-	        if (start == null) {
-	            start = new LinearNode<>(nyFilm);
-	        } else {
-	            LinearNode<Film> aktuell = start;
-	            while (aktuell.getNeste() != null) {
-	                aktuell = aktuell.getNeste();
-	            }
-	            aktuell.setNeste(new LinearNode<>(nyFilm));
-	        }
-	        antall++;
-	    }
+		// TODO Auto-generated method stub
+		
 	}
-	
-	public boolean unikID(int id) {
-	    boolean unik = true;
-	    LinearNode<Film> aktuell = start;
-	    while (aktuell != null) {
-	        if (aktuell.getElement().getFilmnr() == id) {
-	            unik = false;
-	            break;
-	        } else {
-	        	aktuell = aktuell.getNeste();	        	
-	        }
-	    }
-	    return unik;
-	}
-
 
 	@Override
 	public boolean slettFilm(int filmnr) {
